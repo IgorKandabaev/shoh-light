@@ -1,0 +1,240 @@
+.order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 96px;
+  margin-bottom: 125px;
+}
+
+.order__leaft {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+.order__cards {
+  width: 100%;
+}
+
+.order__card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 652px;
+  height: 306px;
+  -webkit-box-shadow: 17px 19px 24px 0px #00000021;
+          box-shadow: 17px 19px 24px 0px #00000021;
+  margin-bottom: 40px;
+  -webkit-transition: -webkit-transform 1s linear;
+  transition: -webkit-transform 1s linear;
+  transition: transform 1s linear;
+  transition: transform 1s linear, -webkit-transform 1s linear;
+}
+
+.order__card-img {
+  width: 40%;
+}
+
+.order__card-desc {
+  padding: 22px 65px 60px 31px;
+}
+
+.order__card-name {
+  font-size: 24px;
+  font-weight: 400;
+  color: #222;
+  text-transform: uppercase;
+  margin-bottom: 42px;
+}
+
+.order__card-info p {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.close {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+.close:hover {
+  -webkit-transform: rotate(80deg);
+          transform: rotate(80deg);
+}
+
+.order__card-number {
+  width: 50px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #656565;
+  padding: 2px;
+  padding-left: 10px;
+  margin-left: 25px;
+}
+
+.order__btn-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.order__button {
+  width: 35%;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  padding: 17px 5px;
+  background-color: transparent;
+  border: 1px solid #A4A4A4;
+  -webkit-transition: background .1s linear;
+  transition: background .1s linear;
+}
+
+.order__button:hover {
+  background-color: #f2f2f2e3;
+}
+
+.delivery {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  width: 100%;
+  max-width: 360px;
+  margin-left: 120px;
+}
+
+.delivery__block {
+  margin-bottom: 57px;
+}
+
+.delivery__heading {
+  font-size: 16px;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+.delivery__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.delivery__input {
+  width: 100%;
+  padding: 12px 17px;
+  border: 1px solid #A4A4A4;
+  font-size: 13px;
+  font-weight: 400;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.delivery__input::-webkit-input-placeholder {
+  color: #B1B1B1;
+}
+
+.delivery__input:-ms-input-placeholder {
+  color: #B1B1B1;
+}
+
+.delivery__input::-ms-input-placeholder {
+  color: #B1B1B1;
+}
+
+.delivery__input::placeholder {
+  color: #B1B1B1;
+}
+
+.delivery__button {
+  width: 120px;
+  font-size: 11px;
+  font-weight: 400;
+  border: 1px solid #A4A4A4;
+  color: #222222;
+  background: transparent;
+  cursor: pointer;
+  padding: 12px 15px;
+  -webkit-transition: background .1s linear;
+  transition: background .1s linear;
+}
+
+.delivery__button:hover {
+  background-color: #dddddd;
+}
+
+.price-calculator {
+  width: 100%;
+  max-width: 652px;
+  background: #F5F3F3;
+}
+
+.price-calculator__block {
+  padding: 40px 43px 44px;
+}
+
+.price-calculator__block p {
+  text-align: right;
+}
+
+.price-calculator__text {
+  font-size: 11px;
+  font-weight: 400;
+  color: #4A4A4A;
+  margin-bottom: 12px;
+}
+
+.price-calculator__text-grand {
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #E2E2E2;
+}
+
+.price-calculator__total {
+  margin-left: 20px;
+}
+
+.price-calculator__total-red {
+  color: #F16D7F;
+}
+
+.btn__price-calculator {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  background: #F16D7F;
+  padding: 15px 42px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 17px;
+}
+
+.btn__price-calculator:hover {
+  background-color: #e46576;
+}
+/*# sourceMappingURL=basket.css.map */
