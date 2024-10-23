@@ -1,0 +1,344 @@
+.container-breadcrumb {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.breadcrumb {
+  width: 100%;
+  height: 148px;
+  background: #F8F3F4;
+  margin-bottom: 130px;
+}
+
+.breadcrumb-product {
+  margin-bottom: 0;
+}
+
+.breadcrumb__page-name p {
+  font-size: 24px;
+  color: #F16D7F;
+  text-transform: uppercase;
+}
+
+.breadcrumb__ol-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.breadcrumb__link {
+  font-size: 14px;
+  color: #808080;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.breadcrumb__link:not(.breadcrumb__link-active) {
+  margin-right: 4px;
+}
+
+.breadcrumb__link-active {
+  color: #F16D7F;
+  cursor: auto;
+}
+
+.breadcrumb__link:not(.breadcrumb__link-active):hover {
+  text-decoration: underline;
+}
+
+.breadcrumb__link:not(.breadcrumb__link-active)::after {
+  content: " /";
+}
+
+.details {
+  font-family: inherit;
+  position: absolute;
+  top: -88px;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  max-width: 360px;
+  cursor: pointer;
+  padding: 13px 16px;
+}
+
+.details[open] {
+  background-color: #fff;
+  -webkit-box-shadow: 6px 4px 35px 0px #00000036;
+          box-shadow: 6px 4px 35px 0px #00000036;
+}
+
+.details__block {
+  display: block;
+}
+
+.details__block-category {
+  margin-bottom: 15px;
+  margin-top: 14px;
+}
+
+.details__block-name {
+  font-size: 16px;
+  color: #EF5B70;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-bottom: 1px solid #EBEBEB;
+  border-left: 5px solid #EF5B70;
+}
+
+.details__block-filter {
+  display: none;
+  margin-top: 22px;
+  padding-left: 17px;
+}
+
+.details__block-filter p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  padding: 5px 0;
+  -webkit-transition: background 0.1s linear;
+  transition: background 0.1s linear;
+  cursor: pointer;
+}
+
+.details__block-filter p:hover {
+  background-color: #e2e2e2;
+}
+
+.details__block-filter-open {
+  display: block;
+}
+
+.summary {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  color: #000;
+  font-weight: 400;
+}
+
+.details[open] summary {
+  color: #EF5B70;
+}
+
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.summary_filter::after {
+  content: url(../img/Vector.svg);
+  padding-left: 0.5em;
+}
+
+.details[open] > summary::after {
+  content: url(../img/Vector-red.svg);
+  color: #EF5B70;
+}
+
+.config {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 13px 16px;
+  position: absolute;
+  top: -88px;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.details-config {
+  padding-right: 50px;
+  position: relative;
+}
+
+.details-config[open] .checkbox__block {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  background-color: #fff;
+  -webkit-box-shadow: 6px 4px 35px 0px #00000036;
+          box-shadow: 6px 4px 35px 0px #00000036;
+  padding: 11px 30px 4px 9px;
+}
+
+.details-config:first-child {
+  margin-left: 40px;
+}
+
+.checkbox {
+  font-family: inherit;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.checkbox__config {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  position: absolute;
+}
+
+.checkbox__label {
+  padding-left: 25px;
+  font-size: 1rem;
+  color: #444;
+  cursor: pointer;
+}
+
+.checkbox__label p {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6F6E6E;
+}
+
+.checkbox__label:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: background .1s linear, border .1s linear;
+  transition: background .1s linear, border .1s linear;
+}
+
+.checkbox__label:after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url("../img/check.svg") no-repeat;
+  background-size: 12px 12px;
+  opacity: 0;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 2;
+  -webkit-transition: opacity .1s linear;
+  transition: opacity .1s linear;
+}
+
+.checkbox__config:checked + .checkbox__label:before {
+  background-color: #a5a5a5;
+  border-color: #a5a5a5;
+}
+
+.checkbox__config:checked + .checkbox__label:after {
+  opacity: 1;
+}
+
+.summary-config {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 20px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  color: #6F6E6E;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+}
+
+.details-config[open] .summary-config {
+  color: #EF5B70;
+}
+
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.summary-config::after {
+  content: url(../img/Vector-config.svg);
+  padding-left: 10px;
+  position: absolute;
+  top: -3px;
+  right: -22px;
+  z-index: 2;
+}
+
+.details-config[open] > .summary-config::after {
+  content: url(../img/Vector-config.svg);
+  color: #EF5B70;
+}
+
+.catalogis-pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 290px;
+  margin: 0 auto;
+  padding: 12px 40px;
+  border: 1px solid #EBEBEB;
+  border-radius: 5px;
+}
+
+.catalogis-pages::before {
+  content: url(../img/Vector-leaft.svg);
+  margin-right: 30px;
+}
+
+.catalogis-pages::after {
+  content: url(../img/Vector-right.svg);
+  margin-left: 30px;
+}
+
+.catalogis-pages p:nth-last-child(2) {
+  padding-right: 0;
+}
+
+.catalogis-pages p:nth-last-child(2)::after {
+  content: "....";
+  padding-right: 0;
+}
+
+.catalogis-pages p:last-of-type {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.page-number {
+  font-size: 16px;
+  font-weight: 300;
+  color: #808080;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.page-number:hover {
+  color: #EF5B70;
+}
+/*# sourceMappingURL=catalog.css.map */
