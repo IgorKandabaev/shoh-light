@@ -1,0 +1,126 @@
+.header {
+  background-color: #222222;
+  height: 75px;
+  width: 100%;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 75px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  margin-right: 41px;
+  padding: 5px;
+}
+
+.header__btn {
+  margin-left: 33px;
+}
+
+.basket-number {
+  position: relative;
+}
+
+.basket-number::after {
+  content: "5";
+  color: #fff;
+  font-size: 12px;
+  background-color: #F16D7F;
+  padding: 2px 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -2px;
+  z-index: 1;
+}
+
+.nav {
+  display: none;
+  width: 100%;
+  max-width: 200px;
+  padding: 37px 10px 0px 34px;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.nav__logo {
+  font-size: Size;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.nav__list .nav__link {
+  font-size: Size;
+  font-weight: 400;
+  color: #F16D7F;
+  text-decoration: none;
+}
+
+.nav__categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 12px 20px;
+}
+
+.categories__link {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #808080;
+  text-decoration: none;
+  padding: 9px 30px 11px 0px;
+  -webkit-transition: background .1s linear;
+  transition: background .1s linear;
+}
+
+.categories__link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  display: inline;
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn__catalog {
+  padding: 15px 40px;
+  border: 1px #FF6A6A solid;
+  color: #F16D7F;
+  -webkit-transition: background 0.1s linear;
+  transition: background 0.1s linear;
+}
+
+.btn__catalog:hover {
+  background-color: #FF6A6A;
+  color: #fff;
+}
+
+.btn-centr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,268 @@
+//Header
+////////////////////////@at-root
+
+@import "Designer/header.scss";
+
+// Button
+/////////////////////////
+
+.btn {
+	display: inline-block;
+	background: none;
+	border: none;
+	text-decoration: none;
+
+	cursor: pointer;
+
+	&__catalog {
+		position: relative;
+		padding: 15px 40px;
+		border: 1px #FF6A6A solid;
+
+		color: $Color-pink;
+		transition: background 0.5s, color 0.5s ;
+
+		&:hover {
+			background-color: #FF6A6A;
+			color: #fff;
+		}
+	}
+	&-centr {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__add-card {
+	padding: 15px 55px 15px 73px;
+}
+	}
+
+//Intro
+//////////////////////////////@at-root
+
+.intro {
+	background-color: $Color-intro;
+
+	margin-bottom: 65px;
+
+	&__content {
+		height: 764px;
+		position: relative;
+
+		display: flex;
+		align-items: center;
+	}
+
+	&__photo {
+		width: 40%;
+
+		& img {
+			height: 100%;
+			width: auto;
+
+			position: absolute;
+
+			bottom: 0;
+			left: -190px;
+			z-index: 1;
+		}
+	}
+
+	&__text {
+
+		width: 40%;
+		padding-left: 16px;
+		display: flex;
+		flex-direction: column;
+
+		border-left: 12px solid #F16D7F;
+
+		color: $Color-black;
+    animation: saleAnim .5s linear 0s infinite normal;
+
+		margin-left: 10%;
+	}
+
+	&__title {
+		font-size: 48px;
+		font-weight: 900;
+	}
+
+	&__subtitle {
+		font-size: 32px;
+		font-weight: 900;
+
+		& span {
+			color: #f77e8e;
+		}
+	}
+}
+
+//Categories
+///////////////////////////@at-root
+
+.categories {
+	margin-bottom: 96px;
+
+	&__block {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 30px;
+
+	}
+
+	&__iner {
+		display: block;
+
+		position: relative;
+		transition: transform .2s linear;
+
+		&:hover {
+		transform: scale(1.1);
+		}
+
+		&_smol {
+			width: 32%;
+			max-width: 360px;
+			height: auto;
+		}
+
+		&_long{
+			 width: 100%;
+		}
+	}
+
+	&__text {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+
+		background-color: rgba(33, 22, 22, 0.7);
+
+		top: 0;
+		left: 0;
+		z-index: 1;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__subtitle {
+		font-size: 16px;
+		line-height: 1.5;
+		color: #fff;
+	}
+
+	&__title {
+		font-size: 24px;
+		line-height: 1.5;
+		font-weight: 700;
+		color: $Color-pink;
+	}
+}
+
+// Fetured Items
+///////////////////////////////
+
+@import "Designer/Fetured-Items.scss";
+
+// Benefits
+//////////////////////////@at-root
+
+.benefits {
+	background-color: #222224;
+
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		padding: 105px 0px;
+	}
+
+	&__item {
+		margin-right: 30px;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+
+	&__icon {
+		width: 100%;
+		height: auto;
+		max-width: 40px;
+		max-height: 45px;
+
+		margin-bottom: 25px;
+	}
+
+	&__title {
+		font-size: 20px;
+		line-height: 1.3;
+		color: #FBFBFB;
+
+		margin-bottom: 15px;
+	}
+
+	&__text {
+		font-size: $Size;
+		line-height: 1.2;
+		text-align: center;
+		color:#aeaeae;
+	}
+}
+
+// believe
+//////////////////////////@at-root
+
+.believe {
+
+	background-image: url(../img/photo-subscribe.jpg) ;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	&__block {
+		height: 448px;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.figure {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		max-width: 360px;
+
+		&__img {
+			width: 96px;
+			margin-bottom: 30px;
+		}
+
+		&__text {
+			font-size: 20px;
+			line-height: 1.2;
+			color: $Color-black;
+			font-style: italic;
+			text-align: center;
+		}
+	}
+
+//subscribe and footer
+///////////////////////////////
+
+@import "Designer/footer.scss";
+
+//MEDIA
+

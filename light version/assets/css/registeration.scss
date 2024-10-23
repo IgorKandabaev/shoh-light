@@ -1,0 +1,116 @@
+@import "vars.scss";
+
+.registration {
+	display: flex;
+	justify-content: space-between;
+
+	margin-top: 64px;
+	margin-bottom: 95px;
+
+	&__block {
+		width: 35%;
+	}
+
+	&__benefits {
+		width: 60%;
+	}
+}
+
+.form__text {
+	font-size: 16px;
+	font-weight: 300;
+	color: #222;
+
+	margin-bottom: 20px;
+}
+
+.form-group {
+	margin-bottom: 20px;
+
+	&_mail {
+		margin: 30px 0px 30px 0px;
+	}
+}
+
+.form__input {
+	width: 100%;
+	border: 1px solid #A4A4A4;
+	padding: 13px 17px;
+
+	&::placeholder {
+		color: #B1B1B1;
+		font-family: $FF-Lato;
+		font-size: 13px;
+		font-weight: 400;
+	}
+}
+
+.form-group_mail-label {
+	font-family: $FF-Lato;
+	font-size: 12px;
+	font-weight: 300;
+	color: #000;
+
+	line-height: 12px;
+	padding-left: 8px;
+	margin-right: 20px;
+}
+
+.form__condition {
+	font-size: 13px;
+	font-weight: 400;
+	color: #B1B1B1;
+
+	margin-bottom: 40px;
+}
+
+.btn_form {
+	position: relative;
+	background-color: $Color-pink;
+	color: #fff;
+	padding: 17px 60px 17px 30px;
+	transition: filter .1s linear;
+
+	&::after {
+		content: url(../img/arrow-r.svg);
+		position: absolute;
+		top: 50%;
+		right: 30px;
+
+		transform: translateY(-50%);
+	}
+
+	&:hover {
+		filter: brightness(90%);
+	}
+}
+
+.registration__benefits-header {
+	font-size: 24px;
+	font-weight: 300;
+	color: #000;
+	line-height: 1.2;
+	margin-bottom: 22px;
+}
+
+.registration__benefits-text {
+	font-size: 24px;
+	font-weight: 300;
+	color: #000;
+	line-height: 1.2;
+	margin-bottom: 22px;
+}
+
+.registration__benefits-li {
+	position: relative;
+	margin-left: 40px;
+}
+
+.registration__benefits-li::before {
+		content: url(../img/Check-mark.svg);
+		position: absolute;
+		top: 0;
+		left: -40px;
+		z-index: 1;
+		//padding-right: 22px;
+	}

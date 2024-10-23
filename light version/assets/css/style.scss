@@ -1,0 +1,386 @@
+@import "vars";
+
+body {
+	font-family: $FF-Lato;
+	font-weight: 400;
+
+	margin: 0;
+	background-color: #fff;
+
+	line-height: 1.2;
+	color: $Color;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+ul, ol, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.position-r {
+	position: relative;
+}
+
+.img{
+	display: block;
+	width: 100%;
+	height: auto;
+
+	&-h100 {
+		display: block;
+		width: 100%;
+		height: 105%;
+	}
+}
+
+.container {
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.input {
+	outline: none;
+	border: none;
+	font-family: $FF-Lato;
+}
+
+.span-red {
+	color: $Color-pink;
+}
+
+.section {
+	margin-bottom: 96px;
+}
+
+
+//INDEX
+/////////////////////////////
+
+@import "index.scss";
+
+
+//CATALOG
+//////////////////////////////@at-root
+
+@import "catalog.scss";
+
+//PRODUCT
+/////////////////////////////////@at-root
+
+@import "product.scss";
+
+// BASKET
+////////////////////////////////////
+
+@import "basket.scss";
+
+//REGISTER
+/////////////////////////////////
+
+@import "registeration.scss";
+
+
+@media (max-width: 1100px) {
+	.card {
+		grid-template-columns: 35% 35%;
+		justify-content: space-evenly;
+}};
+
+@media (max-width: 960px) {
+	.card {
+		grid-template-columns: 45% 45%;
+		justify-content: space-around;
+}};
+
+@media (max-width: 900px) {
+	.intro__photo img{
+		max-height: 680px;
+}
+};
+
+ @media (max-width: 780px) {
+	.intro__photo img{
+		max-height: 600px;
+		height: auto;
+}
+.intro__text {
+	margin-left: 0;
+	width: 60%;
+}
+};
+
+@media (max-width: 770px) {
+	.benefits__block {
+		flex-direction: column;
+	}
+	.believe__block {
+		flex-direction: column;
+		padding: 40px 0 40px;
+	}
+	.subscribe {
+		padding-bottom: 100px;
+	}
+	.benefits__item {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 740px) {
+
+	.header__right a {
+		display: none;
+	}
+
+.intro {
+	height: $intro-momal;
+}
+.intro__content {
+	height: $intro-momal;
+}
+
+.intro__photo img {
+	display: none;
+}
+
+.intro__title {
+	font-size: 38px;
+ }
+
+ .intro__subtitle {
+	 font-size: 20px;
+ }
+
+.intro__text {
+	width: 100%;
+	margin: 0 auto;
+	margin-left: -50px;
+}
+
+.categories__block {
+	flex-direction: column;
+}
+.categories__iner {
+	width: 100%;
+	max-width: 420px;
+	margin: 0 auto;
+	margin-bottom: 32px;
+}
+.categories__iner_long {
+	height: 115px;
+}
+.card {
+	grid-template-columns: 360px;
+}
+
+.benefits__item {
+	margin-bottom: 40px;
+}
+
+.figure__text {
+	font-size: 16px
+}
+.subscribe__text {
+	font-size: 16px;
+	& span {
+		font-size: 20px
+	}
+}
+
+.fa {
+	font-size: 13px;
+	padding: 4px;;
+}
+};
+
+
+// catolog
+
+@media (max-width: 900px) {
+	.config {
+		left: 100%;
+		transform: translateX(-100%);
+}
+};
+
+@media (max-width: 740px) {
+ .container-breadcrumb {
+	 flex-direction: column;
+ }
+ .breadcrumb__page-name {
+	 margin-top: 24px;
+ }
+ .breadcrumb__ol {
+margin-bottom: 50px;
+ }
+};
+
+// Basket
+
+@media (max-width: 860px) {
+.order {
+	flex-direction: column;
+	width: 100%;
+	max-width: 652px;
+	margin: 0 auto;
+	margin-bottom: 128px;
+}
+.order__leaft {
+	margin: 0 auto;
+}
+.order__card {
+	margin-top: 60px;
+	width: 100%;
+	max-width: 652px;
+}
+
+.delivery {
+	margin: 0 auto;
+	max-width: 652px;
+}
+}
+
+@media (max-width:450px) {
+
+	.breadcrumb__page-name {
+		margin-top: 50px;
+	}
+	.order {
+		width: 100%;
+		max-width: $cards_modal-w;
+		margin: $margin-mobal;
+
+	}
+
+	.order__card-desc {
+		padding: 13px 30px 20px 15px;
+	}
+
+	.order__card-name {
+		font-size: $fs-mobalH;
+		margin-bottom: 20px;
+	}
+
+	.order__card-info {
+		font-size: $fs-mobal;
+		& p {
+			margin-bottom: 0;
+		}
+	}
+	.order__card  {
+		height: 188px;
+	}
+
+	.order__button {
+		width: 48%;
+		font-size: 12px;
+	}
+	.delivery {
+		margin: $margin-mobal;
+	}
+
+	.footer__container {
+		flex-direction: column-reverse;
+		justify-content: space-around;
+	}
+}
+
+// Register
+
+
+@media (max-width: 860px) {
+	.registration{
+		margin: 40px 7px 95px 7px;
+	}
+	.registration__block {
+		width: 48%;
+	}
+
+	.registration__benefits {
+		width: 48%;
+		margin-right: 7px;
+	}
+
+	.registration__benefits-text {
+		font-size: $fs-table;
+	}
+}
+
+@media (max-width: 600px) {
+	.breadcrumb__page-name_centr {
+		height: 100%;
+
+		& p{
+		height: 100%;
+		margin-top: 50%;
+		transform: translateY(-50%);
+	}
+	}
+	.registration {
+		display: flex;
+		flex-direction: column;
+	}
+	.registration__block {
+		width: 98%;
+	}
+
+	.registration__benefits {
+		margin-top: 40px;
+		width: 98%;
+		margin-right: 7px;
+	}
+}
+
+// Product
+
+@media (max-width: 900px) {
+	.product {
+		padding: 65px 107px;
+	}
+
+	.config_product {
+		left: 95%;
+	}
+}
+
+@media (max-width: 770px) {
+	.config_product {
+		left: 100%;
+	}
+}
+
+@media (max-width: 400px) {
+	.breadcrumb__page-name {
+		margin-bottom: 15px;
+	}
+	.product {
+		padding: 65px 10px;
+	}
+	.details-config {
+		padding-right: 5px;
+		margin-right: 25px;
+	}
+	.summary-config {
+		font-size: 10px;
+		&::after {
+			padding: 0;
+		}
+	}
+	.details-long {
+		width: 90px;
+	}
+
+	.breadcrumb__link {
+		font-size: $fs-mobal;
+	}
+ }
